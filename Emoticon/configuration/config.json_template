@@ -1,0 +1,6 @@
+{
+    "senderEmails" : ["sender@mail.com"],
+    "receiversEmails" : ["test1@mail.com","test2@mail.com"],
+    "subject" : "Negative Emotion Detected",
+    "emailBody" : "This leave record submission is considered as approved by you and no further action is expected of you in the leave manager."
+}
