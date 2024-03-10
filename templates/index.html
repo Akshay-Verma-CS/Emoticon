@@ -36,9 +36,19 @@
 <div class="container">
     <h1>Welcome to Emotion Checker App</h1>
     <p>Check the sentiment of your image to determine whether it's positive or negative.</p>
-    <div>
+    <!-- <div>
         <label for="formFileLg" class="form-label">Large file input example</label>
         <input class="form-control form-control-lg" id="formFileLg" type="file">
+    </div> -->
+    <div class="container mt-5">
+        <form action="{% url 'upload_file' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="formFileLg" class="form-label">Large file input example</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </div>
 {%endblock content%}
