@@ -52,13 +52,3 @@ class GmailSender:
             return sent_message
         except Exception as error:
             print('An error occurred: %s' % error)
-
-# if __name__ == '__main__':
-#     gmail_sender = GmailSender()
-#     sender_email = "aarshmail@gmail.com"
-#     receiver_email = "topensite@gmail.com"
-#     subject = "Test Subject"
-#     body = "Hello, this is a test email."
-#     message = gmail_sender.create_message(sender_email, receiver_email, subject, body)
-#     gmail_sender.send_message("me", message)
-# print(os.getcwd())
